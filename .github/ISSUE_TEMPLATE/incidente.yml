@@ -1,0 +1,74 @@
+name: 🐛 Reporte de Incidente
+description: Reportá un bug o incidente encontrado durante el testing
+title: "[BUG] "
+labels: ["incidente"]
+body:
+  - type: dropdown
+    id: grupo
+    attributes:
+      label: Grupo
+      description: ¿A qué grupo pertenecés?
+      options:
+        - Grupo 1
+        - Grupo 2
+        - Grupo 3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severidad
+    attributes:
+      label: Severidad
+      description: ¿Qué tan grave es el incidente?
+      options:
+        - Crítica (bloquea el uso de la app)
+        - Alta (funcionalidad principal afectada)
+        - Media (funcionalidad secundaria afectada)
+        - Baja (cosmético / detalle menor)
+    validations:
+      required: true
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Navegador, sistema operativo, versión, dispositivo, etc.
+      placeholder: "Ej: Chrome 128 / Windows 11 / Desktop"
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducir
+      description: Detallá paso a paso cómo llegar al incidente
+      placeholder: |
+        1. Ir a...
+        2. Hacer click en...
+        3. Completar el campo...
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+      description: ¿Qué debería pasar?
+    validations:
+      required: true
+
+  - type: textarea
+    id: obtenido
+    attributes:
+      label: Resultado obtenido
+      description: ¿Qué pasó realmente?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      description: Screenshots, videos o logs. Podés arrastrar archivos directo acá.
+    validations:
+      required: false
