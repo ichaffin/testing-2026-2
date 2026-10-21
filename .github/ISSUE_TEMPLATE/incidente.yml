@@ -71,6 +71,7 @@ body:
         - label: Usuario no logueado
         - label: Rol admin
         - label: Datos de prueba cargados
+        - label: Acceso a internet
         - label: Ninguna
         - label: Otra (especificar abajo)
 
