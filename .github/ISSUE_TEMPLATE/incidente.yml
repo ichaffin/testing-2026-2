@@ -23,7 +23,7 @@ body:
       options:
         - Grupo 1
         - Grupo 2
-        - Grupo 3
+        - TP ESI
     validations:
       required: true
 
