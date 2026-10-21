@@ -1,8 +1,20 @@
 name: 🐛 Reporte de Incidente
-description: Reportá un bug o incidente encontrado durante el testing
-title: "[BUG] "
+description: Reportá un bug, mejora o sugerencia encontrada durante el testing
+title: "[ISSUE] "
 labels: ["incidente"]
 body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de Issue
+      description: ¿Qué tipo de issue estás reportando?
+      options:
+        - BUG
+        - MEJORA
+        - SUGERENCIA
+    validations:
+      required: true
+
   - type: dropdown
     id: grupo
     attributes:
