@@ -40,6 +40,18 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: criticidad
+    attributes:
+      label: Criticidad
+      description: Impacto o urgencia del problema en el negocio / usuarios
+      options:
+        - ALTA
+        - MEDIA
+        - BAJA
+    validations:
+      required: true
+
   - type: input
     id: ambiente
     attributes:
