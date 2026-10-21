@@ -61,6 +61,28 @@ body:
     validations:
       required: true
 
+  - type: checkboxes
+    id: precondiciones
+    attributes:
+      label: Precondiciones
+      description: Marcá todas las que apliquen antes de reproducir el incidente
+      options:
+        - label: Usuario logueado
+        - label: Usuario no logueado
+        - label: Rol admin
+        - label: Datos de prueba cargados
+        - label: Ninguna
+        - label: Otra (especificar abajo)
+
+  - type: input
+    id: precondiciones_otra
+    attributes:
+      label: Otra precondición (si corresponde)
+      description: Completá solo si tildaste "Otra" arriba
+      placeholder: "Ej: Conexión a internet activa"
+    validations:
+      required: false
+
   - type: textarea
     id: pasos
     attributes:
